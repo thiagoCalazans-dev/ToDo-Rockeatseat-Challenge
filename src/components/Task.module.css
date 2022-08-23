@@ -1,0 +1,54 @@
+.taskCard {
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background-color: transparent;
+  border: 2px solid var(--blue);
+  overflow: hidden;  
+}
+
+.checkbox, label:hover {
+  cursor: pointer;
+}
+ .checkIcon {
+  color: var(--gray-100);  
+ }
+
+.regularLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+  line-height: 1.4;
+}
+
+.decoratedLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+  line-height: 1.4;
+  text-decoration: line-through;
+}
+
+.trash {
+  transition: 0.3s;
+}
+
+.trash:hover {
+  cursor: pointer;
+  color: var(--danger);
+}
